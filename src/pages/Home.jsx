@@ -1,43 +1,44 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function ColorSchemesExample() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="primary" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+      <header>
+        <Navbar bg="light" data-bs-theme="light">
+          <Container>
+            <Row>
+              <Col>
+                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+              </Col>
+              <Col>
+                  <Nav.Link href="#features">About</Nav.Link>              
+              </Col>
+              <Col>
+                <Form inline>
+                  <InputGroup>
+                    <Form.Control
+                      placeholder="Search"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                    />
+                    <InputGroup.Text id="basic-addon1">@</InputGroup.Text>                
+                  </InputGroup>
+                </Form>              
+              </Col>
+            </Row>
+          </Container>
+        </Navbar>
+      </header>
+      <main></main>
+      <footer>
 
-      <br />
-      <Navbar bg="light" data-bs-theme="light">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+      </footer>
     </>
   );
 }
