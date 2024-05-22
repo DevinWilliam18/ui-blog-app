@@ -13,23 +13,21 @@ function ColorSchemesExample() {
         <Navbar bg="light" data-bs-theme="light">
           <Container>
             <Row>
-              <Col>
+              <Col xs={4}>
                 <Navbar.Brand href="#home">Navbar</Navbar.Brand>
               </Col>
               <Col>
                   <Nav.Link href="#features">About</Nav.Link>              
-              </Col>
-              <Col>
-                <Form inline>
-                  <InputGroup>
-                    <Form.Control
-                      placeholder="Search"
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                    />
-                    <InputGroup.Text id="basic-addon1">@</InputGroup.Text>                
-                  </InputGroup>
-                </Form>              
+                  <Form inline>
+                    <InputGroup>
+                      <Form.Control
+                        placeholder="Search"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                      />
+                      <InputGroup.Text id="basic-addon1">@</InputGroup.Text>                
+                    </InputGroup>
+                  </Form>                  
               </Col>
             </Row>
           </Container>
